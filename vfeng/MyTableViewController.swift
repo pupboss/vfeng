@@ -8,12 +8,11 @@
 
 import UIKit
 
-class MyTableViewController: UITableViewController {
+class MyTableViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.tableFooterView = UIView()
     }
 
     
@@ -22,6 +21,17 @@ class MyTableViewController: UITableViewController {
         self.performSegueWithIdentifier("my2user", sender: nil)
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if "" == Constants.UserInfo.USER_NAME {
+            
+            self.performSegueWithIdentifier("my2login", sender: nil)
+            
+        } else {
+            
+        }
+    }
 
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         

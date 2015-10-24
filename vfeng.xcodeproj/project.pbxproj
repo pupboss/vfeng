@@ -16,6 +16,11 @@
 		71D0EC6C1BDBCC8100429818 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC681BDBCC8100429818 /* Extensions.swift */; };
 		71D0EC711BDBCE5A00429818 /* CircleHeadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC701BDBCE5A00429818 /* CircleHeadImageView.swift */; };
 		71D0EC731BDBD93900429818 /* SelfInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC721BDBD93900429818 /* SelfInfoTableViewController.swift */; };
+		71D0EC751BDBD9E700429818 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC741BDBD9E700429818 /* BaseTableViewController.swift */; };
+		71D0EC771BDBE0E100429818 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC761BDBE0E100429818 /* LoginViewController.swift */; };
+		71D0EC801BDBE46800429818 /* MBProgressHUD+LJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC7C1BDBE46800429818 /* MBProgressHUD+LJ.m */; };
+		71D0EC811BDBE46800429818 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71D0EC7D1BDBE46800429818 /* MBProgressHUD.bundle */; };
+		71D0EC821BDBE46800429818 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC7F1BDBE46800429818 /* MBProgressHUD.m */; };
 		71D277471BDB65280081C552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D277461BDB65280081C552 /* AppDelegate.swift */; };
 		71D2774C1BDB65280081C552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D2774A1BDB65280081C552 /* Main.storyboard */; };
 		71D2774E1BDB65280081C552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D2774D1BDB65280081C552 /* Assets.xcassets */; };
@@ -53,6 +58,14 @@
 		71D0EC681BDBCC8100429818 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		71D0EC701BDBCE5A00429818 /* CircleHeadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleHeadImageView.swift; sourceTree = "<group>"; };
 		71D0EC721BDBD93900429818 /* SelfInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfInfoTableViewController.swift; sourceTree = "<group>"; };
+		71D0EC741BDBD9E700429818 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		71D0EC761BDBE0E100429818 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		71D0EC791BDBE46800429818 /* vfeng-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "vfeng-Bridging-Header.h"; sourceTree = "<group>"; };
+		71D0EC7B1BDBE46800429818 /* MBProgressHUD+LJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+LJ.h"; sourceTree = "<group>"; };
+		71D0EC7C1BDBE46800429818 /* MBProgressHUD+LJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+LJ.m"; sourceTree = "<group>"; };
+		71D0EC7D1BDBE46800429818 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		71D0EC7E1BDBE46800429818 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		71D0EC7F1BDBE46800429818 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		71D277431BDB65280081C552 /* vfeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vfeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D277461BDB65280081C552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71D2774B1BDB65280081C552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +120,7 @@
 		711020AA1BDB65A800CD294D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				71D0EC781BDBE46800429818 /* OCFiles */,
 				71D0EC651BDBCC8100429818 /* Tools */,
 				71D2774F1BDB65280081C552 /* LaunchScreen.storyboard */,
 				71D2774D1BDB65280081C552 /* Assets.xcassets */,
@@ -119,10 +133,12 @@
 		711020AB1BDB65BF00CD294D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				71D0EC741BDBD9E700429818 /* BaseTableViewController.swift */,
 				71103D071BDB73F300215F46 /* BaseViewController.swift */,
 				71103D091BDB743300215F46 /* IndexViewController.swift */,
 				71D0EC631BDBCB9300429818 /* MyTableViewController.swift */,
 				71D0EC721BDBD93900429818 /* SelfInfoTableViewController.swift */,
+				71D0EC761BDBE0E100429818 /* LoginViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -144,6 +160,27 @@
 				71D0EC681BDBCC8100429818 /* Extensions.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		71D0EC781BDBE46800429818 /* OCFiles */ = {
+			isa = PBXGroup;
+			children = (
+				71D0EC791BDBE46800429818 /* vfeng-Bridging-Header.h */,
+				71D0EC7A1BDBE46800429818 /* MBProgressHUD */,
+			);
+			path = OCFiles;
+			sourceTree = "<group>";
+		};
+		71D0EC7A1BDBE46800429818 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				71D0EC7B1BDBE46800429818 /* MBProgressHUD+LJ.h */,
+				71D0EC7C1BDBE46800429818 /* MBProgressHUD+LJ.m */,
+				71D0EC7D1BDBE46800429818 /* MBProgressHUD.bundle */,
+				71D0EC7E1BDBE46800429818 /* MBProgressHUD.h */,
+				71D0EC7F1BDBE46800429818 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		71D2773A1BDB65280081C552 = {
@@ -314,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71D277511BDB65280081C552 /* LaunchScreen.storyboard in Resources */,
+				71D0EC811BDBE46800429818 /* MBProgressHUD.bundle in Resources */,
 				71D2774E1BDB65280081C552 /* Assets.xcassets in Resources */,
 				71D2774C1BDB65280081C552 /* Main.storyboard in Resources */,
 			);
@@ -388,16 +426,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D0EC771BDBE0E100429818 /* LoginViewController.swift in Sources */,
 				71D277471BDB65280081C552 /* AppDelegate.swift in Sources */,
 				71103D081BDB73F300215F46 /* BaseViewController.swift in Sources */,
 				71D069591BDB7CC5009FA91F /* IndexControl.swift in Sources */,
 				71D0EC731BDBD93900429818 /* SelfInfoTableViewController.swift in Sources */,
+				71D0EC801BDBE46800429818 /* MBProgressHUD+LJ.m in Sources */,
 				71D0EC641BDBCB9300429818 /* MyTableViewController.swift in Sources */,
 				71D0EC711BDBCE5A00429818 /* CircleHeadImageView.swift in Sources */,
 				71D0EC6C1BDBCC8100429818 /* Extensions.swift in Sources */,
 				71D0EC6A1BDBCC8100429818 /* Alamofire-SwiftyJSON.swift in Sources */,
 				71103D0A1BDB743300215F46 /* IndexViewController.swift in Sources */,
+				71D0EC751BDBD9E700429818 /* BaseTableViewController.swift in Sources */,
 				71D0EC6B1BDBCC8100429818 /* CommonTools.swift in Sources */,
+				71D0EC821BDBE46800429818 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +588,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pupboss.vfeng;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "vfeng/OCFiles/vfeng-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -561,6 +604,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pupboss.vfeng;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "vfeng/OCFiles/vfeng-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
