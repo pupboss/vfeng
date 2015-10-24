@@ -11,6 +11,7 @@ import Alamofire
 
 class SelfInfoTableViewController: BaseTableViewController {
 
+    let keyArr = ["姓名", "年龄", "性别", "生日", "手机号", "邮箱", "身份证号", "地址", "V标签", "V领域", "密码", "加入日期", "是否有效"]
     var infoArr = []
     
     override func viewDidLoad() {
@@ -18,7 +19,6 @@ class SelfInfoTableViewController: BaseTableViewController {
 
         getSelfInfoFromServer()
         
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "infocell")
     }
 
     func getSelfInfoFromServer() -> Void {
@@ -57,7 +57,8 @@ class SelfInfoTableViewController: BaseTableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("infocell", forIndexPath: indexPath)
 
-        cell.textLabel?.text = self.infoArr[indexPath.row] as? String
+        cell.textLabel?.text = self.keyArr[indexPath.row]
+        cell.detailTextLabel?.text = self.infoArr[indexPath.row] as? String
 
         return cell
     }
