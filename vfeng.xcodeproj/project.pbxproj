@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		71103D081BDB73F300215F46 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71103D071BDB73F300215F46 /* BaseViewController.swift */; };
 		71103D0A1BDB743300215F46 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71103D091BDB743300215F46 /* IndexViewController.swift */; };
+		714FF9CE1BDC0F3D009C0CF2 /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714FF9CD1BDC0F3D009C0CF2 /* ShowDetailViewController.swift */; };
+		718CA2791BDBFCB100DD04D7 /* ShowTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CA2781BDBFCB100DD04D7 /* ShowTableViewController.swift */; };
+		718CA27C1BDC018C00DD04D7 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CA27A1BDC018C00DD04D7 /* FoodTableViewCell.swift */; };
+		718CA27D1BDC018C00DD04D7 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 718CA27B1BDC018C00DD04D7 /* FoodTableViewCell.xib */; };
 		71D069591BDB7CC5009FA91F /* IndexControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D069581BDB7CC5009FA91F /* IndexControl.swift */; };
 		71D0EC641BDBCB9300429818 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC631BDBCB9300429818 /* MyTableViewController.swift */; };
 		71D0EC6A1BDBCC8100429818 /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC661BDBCC8100429818 /* Alamofire-SwiftyJSON.swift */; };
@@ -52,6 +56,10 @@
 		45EED0B574837AE0489E7CEB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		71103D071BDB73F300215F46 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		71103D091BDB743300215F46 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		714FF9CD1BDC0F3D009C0CF2 /* ShowDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
+		718CA2781BDBFCB100DD04D7 /* ShowTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTableViewController.swift; sourceTree = "<group>"; };
+		718CA27A1BDC018C00DD04D7 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		718CA27B1BDC018C00DD04D7 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
 		71D069581BDB7CC5009FA91F /* IndexControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexControl.swift; sourceTree = "<group>"; };
 		71D0EC631BDBCB9300429818 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		71D0EC661BDBCC8100429818 /* Alamofire-SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire-SwiftyJSON.swift"; sourceTree = "<group>"; };
@@ -142,6 +150,8 @@
 				71D0EC721BDBD93900429818 /* SelfInfoTableViewController.swift */,
 				71D0EC831BDBE85000429818 /* DetailTableViewController.swift */,
 				71D0EC761BDBE0E100429818 /* LoginViewController.swift */,
+				718CA2781BDBFCB100DD04D7 /* ShowTableViewController.swift */,
+				714FF9CD1BDC0F3D009C0CF2 /* ShowDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -151,6 +161,8 @@
 			children = (
 				71D069581BDB7CC5009FA91F /* IndexControl.swift */,
 				71D0EC701BDBCE5A00429818 /* CircleHeadImageView.swift */,
+				718CA27A1BDC018C00DD04D7 /* FoodTableViewCell.swift */,
+				718CA27B1BDC018C00DD04D7 /* FoodTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -355,6 +367,7 @@
 			files = (
 				71D277511BDB65280081C552 /* LaunchScreen.storyboard in Resources */,
 				71D0EC811BDBE46800429818 /* MBProgressHUD.bundle in Resources */,
+				718CA27D1BDC018C00DD04D7 /* FoodTableViewCell.xib in Resources */,
 				71D2774E1BDB65280081C552 /* Assets.xcassets in Resources */,
 				71D2774C1BDB65280081C552 /* Main.storyboard in Resources */,
 			);
@@ -429,13 +442,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718CA2791BDBFCB100DD04D7 /* ShowTableViewController.swift in Sources */,
 				71D0EC771BDBE0E100429818 /* LoginViewController.swift in Sources */,
 				71D277471BDB65280081C552 /* AppDelegate.swift in Sources */,
 				71103D081BDB73F300215F46 /* BaseViewController.swift in Sources */,
 				71D069591BDB7CC5009FA91F /* IndexControl.swift in Sources */,
 				71D0EC731BDBD93900429818 /* SelfInfoTableViewController.swift in Sources */,
+				714FF9CE1BDC0F3D009C0CF2 /* ShowDetailViewController.swift in Sources */,
 				71D0EC801BDBE46800429818 /* MBProgressHUD+LJ.m in Sources */,
 				71D0EC841BDBE85000429818 /* DetailTableViewController.swift in Sources */,
+				718CA27C1BDC018C00DD04D7 /* FoodTableViewCell.swift in Sources */,
 				71D0EC641BDBCB9300429818 /* MyTableViewController.swift in Sources */,
 				71D0EC711BDBCE5A00429818 /* CircleHeadImageView.swift in Sources */,
 				71D0EC6C1BDBCC8100429818 /* Extensions.swift in Sources */,

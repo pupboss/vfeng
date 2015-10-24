@@ -11,7 +11,7 @@ import Alamofire
 
 class SelfInfoTableViewController: BaseTableViewController {
 
-    let keyArr = ["姓名", "年龄", "性别", "生日", "手机号", "邮箱", "身份证号", "地址", "V标签", "V领域", "密码", "加入日期", "是否有效"]
+    let keyArr = ["姓名", "年龄", "性别", "生日", "手机号", "邮箱", "身份证号", "地址", "V标签", "V领域", "密码", "加入日期", "账户是否有效"]
     var infoArr = []
     
     override func viewDidLoad() {
