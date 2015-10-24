@@ -10,6 +10,11 @@
 		71103D081BDB73F300215F46 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71103D071BDB73F300215F46 /* BaseViewController.swift */; };
 		71103D0A1BDB743300215F46 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71103D091BDB743300215F46 /* IndexViewController.swift */; };
 		71D069591BDB7CC5009FA91F /* IndexControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D069581BDB7CC5009FA91F /* IndexControl.swift */; };
+		71D0EC641BDBCB9300429818 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC631BDBCB9300429818 /* MyTableViewController.swift */; };
+		71D0EC6A1BDBCC8100429818 /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC661BDBCC8100429818 /* Alamofire-SwiftyJSON.swift */; };
+		71D0EC6B1BDBCC8100429818 /* CommonTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC671BDBCC8100429818 /* CommonTools.swift */; };
+		71D0EC6C1BDBCC8100429818 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC681BDBCC8100429818 /* Extensions.swift */; };
+		71D0EC711BDBCE5A00429818 /* CircleHeadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC701BDBCE5A00429818 /* CircleHeadImageView.swift */; };
 		71D277471BDB65280081C552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D277461BDB65280081C552 /* AppDelegate.swift */; };
 		71D2774C1BDB65280081C552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D2774A1BDB65280081C552 /* Main.storyboard */; };
 		71D2774E1BDB65280081C552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D2774D1BDB65280081C552 /* Assets.xcassets */; };
@@ -41,6 +46,11 @@
 		71103D071BDB73F300215F46 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		71103D091BDB743300215F46 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		71D069581BDB7CC5009FA91F /* IndexControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexControl.swift; sourceTree = "<group>"; };
+		71D0EC631BDBCB9300429818 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		71D0EC661BDBCC8100429818 /* Alamofire-SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire-SwiftyJSON.swift"; sourceTree = "<group>"; };
+		71D0EC671BDBCC8100429818 /* CommonTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTools.swift; sourceTree = "<group>"; };
+		71D0EC681BDBCC8100429818 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		71D0EC701BDBCE5A00429818 /* CircleHeadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleHeadImageView.swift; sourceTree = "<group>"; };
 		71D277431BDB65280081C552 /* vfeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vfeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D277461BDB65280081C552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71D2774B1BDB65280081C552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +105,7 @@
 		711020AA1BDB65A800CD294D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				71D0EC651BDBCC8100429818 /* Tools */,
 				71D2774F1BDB65280081C552 /* LaunchScreen.storyboard */,
 				71D2774D1BDB65280081C552 /* Assets.xcassets */,
 				71D277461BDB65280081C552 /* AppDelegate.swift */,
@@ -108,6 +119,7 @@
 			children = (
 				71103D071BDB73F300215F46 /* BaseViewController.swift */,
 				71103D091BDB743300215F46 /* IndexViewController.swift */,
+				71D0EC631BDBCB9300429818 /* MyTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -116,8 +128,19 @@
 			isa = PBXGroup;
 			children = (
 				71D069581BDB7CC5009FA91F /* IndexControl.swift */,
+				71D0EC701BDBCE5A00429818 /* CircleHeadImageView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		71D0EC651BDBCC8100429818 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				71D0EC661BDBCC8100429818 /* Alamofire-SwiftyJSON.swift */,
+				71D0EC671BDBCC8100429818 /* CommonTools.swift */,
+				71D0EC681BDBCC8100429818 /* Extensions.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		71D2773A1BDB65280081C552 = {
@@ -365,7 +388,12 @@
 				71D277471BDB65280081C552 /* AppDelegate.swift in Sources */,
 				71103D081BDB73F300215F46 /* BaseViewController.swift in Sources */,
 				71D069591BDB7CC5009FA91F /* IndexControl.swift in Sources */,
+				71D0EC641BDBCB9300429818 /* MyTableViewController.swift in Sources */,
+				71D0EC711BDBCE5A00429818 /* CircleHeadImageView.swift in Sources */,
+				71D0EC6C1BDBCC8100429818 /* Extensions.swift in Sources */,
+				71D0EC6A1BDBCC8100429818 /* Alamofire-SwiftyJSON.swift in Sources */,
 				71103D0A1BDB743300215F46 /* IndexViewController.swift in Sources */,
+				71D0EC6B1BDBCC8100429818 /* CommonTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
