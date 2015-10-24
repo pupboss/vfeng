@@ -21,6 +21,7 @@
 		71D0EC801BDBE46800429818 /* MBProgressHUD+LJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC7C1BDBE46800429818 /* MBProgressHUD+LJ.m */; };
 		71D0EC811BDBE46800429818 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71D0EC7D1BDBE46800429818 /* MBProgressHUD.bundle */; };
 		71D0EC821BDBE46800429818 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC7F1BDBE46800429818 /* MBProgressHUD.m */; };
+		71D0EC841BDBE85000429818 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0EC831BDBE85000429818 /* DetailTableViewController.swift */; };
 		71D277471BDB65280081C552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D277461BDB65280081C552 /* AppDelegate.swift */; };
 		71D2774C1BDB65280081C552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D2774A1BDB65280081C552 /* Main.storyboard */; };
 		71D2774E1BDB65280081C552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D2774D1BDB65280081C552 /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		71D0EC7D1BDBE46800429818 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		71D0EC7E1BDBE46800429818 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		71D0EC7F1BDBE46800429818 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		71D0EC831BDBE85000429818 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		71D277431BDB65280081C552 /* vfeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vfeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D277461BDB65280081C552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71D2774B1BDB65280081C552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				71103D091BDB743300215F46 /* IndexViewController.swift */,
 				71D0EC631BDBCB9300429818 /* MyTableViewController.swift */,
 				71D0EC721BDBD93900429818 /* SelfInfoTableViewController.swift */,
+				71D0EC831BDBE85000429818 /* DetailTableViewController.swift */,
 				71D0EC761BDBE0E100429818 /* LoginViewController.swift */,
 			);
 			name = Controllers;
@@ -432,6 +435,7 @@
 				71D069591BDB7CC5009FA91F /* IndexControl.swift in Sources */,
 				71D0EC731BDBD93900429818 /* SelfInfoTableViewController.swift in Sources */,
 				71D0EC801BDBE46800429818 /* MBProgressHUD+LJ.m in Sources */,
+				71D0EC841BDBE85000429818 /* DetailTableViewController.swift in Sources */,
 				71D0EC641BDBCB9300429818 /* MyTableViewController.swift in Sources */,
 				71D0EC711BDBCE5A00429818 /* CircleHeadImageView.swift in Sources */,
 				71D0EC6C1BDBCC8100429818 /* Extensions.swift in Sources */,

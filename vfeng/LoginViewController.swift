@@ -57,39 +57,29 @@ class LoginViewController: BaseViewController {
             return
         }
         
-        CommonTools.storeUserDefaultValueForKey(Constants.UserInfoKey.USER_NAME_KEY, value: self.userNameTextField.text!)
-        CommonTools.storeUserDefaultValueForKey(Constants.UserInfoKey.PASSWORD_KEY, value: self.passwordTextField.text!)
         
         let param = [
-            "userId": self.userId,
+            "username": self.userId,
             "password": self.password
         ]
         
-        Alamofire.request(.POST, Constants.ROOT_URL + "account/login", parameters: param).responseJSON { (response: Response<AnyObject, NSError>) -> Void in
+        Alamofire.request(.POST, Constants.ROOT_URL + "account", parameters: param).responseJSON { (response: Response<AnyObject, NSError>) -> Void in
             
             MBProgressHUD.hideHUD()
             
             if let dict = response.result.value as? Dictionary<String, AnyObject> {
                 
-                if response.response?.statusCode == 400 {
+                if dict["status"] as! Bool {
+                
+                    MBProgressHUD.showSuccess("登录成功")
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                    CommonTools.storeUserDefaultValueForKey(Constants.UserInfoKey.USER_NAME_KEY, value: self.userNameTextField.text!)
+                    CommonTools.storeUserDefaultValueForKey(Constants.UserInfoKey.PASSWORD_KEY, value: self.passwordTextField.text!)
                     
-                    MBProgressHUD.showError(Constants.Notification.PASSWORD_ERROR)
-                    
+                    Constants.UserInfo.USER_NAME = self.userId
                 } else {
                     
-                    if dict["userType"] as! String == "STUDENT" {
-                        
-                        Constants.LOGIN_TOKEN = dict["loginToken"] as! String
-                        
-                        CommonTools.storeUserDefaultValueForKey(Constants.UserInfoKey.LOGIN_TOKEN_KEY, value: dict["loginToken"] as! String)
-                        CommonTools.storeUserDefaultValueForKey(Constants.UserInfoKey.EXPRES_AT_KEY, value: dict["expiresAt"] as! String)
-                        MBProgressHUD.showSuccess("登录成功")
-                        self.dismissViewControllerAnimated(true, completion: nil)
-                        
-                    } else {
-                        
-                        MBProgressHUD.showError("暂不支持教师用户")
-                    }
+                    MBProgressHUD.showError(Constants.Notification.NET_ERROR)
                 }
                 
             } else {

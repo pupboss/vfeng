@@ -206,8 +206,15 @@
                             <outlet property="delegate" destination="drX-l0-ljE" id="WjD-pS-7H8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="1VC-qF-Pwc"/>
+                    <navigationItem key="navigationItem" id="1VC-qF-Pwc">
+                        <barButtonItem key="leftBarButtonItem" image="logout" id="N6N-Bk-fp7">
+                            <connections>
+                                <action selector="logoutAction:" destination="drX-l0-ljE" id="gWy-Xv-27e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="escButton" destination="N6N-Bk-fp7" id="7rd-oB-7Qz"/>
                         <segue destination="8tc-7C-7L1" kind="show" identifier="my2user" id="KGY-I5-odD"/>
                         <segue destination="0ir-Re-g38" kind="presentation" identifier="my2login" id="NdA-WP-Hfj"/>
                     </connections>
@@ -216,10 +223,10 @@
             </objects>
             <point key="canvasLocation" x="172" y="1209"/>
         </scene>
-        <!--Base Table View Controller-->
+        <!--Detail Table View Controller-->
         <scene sceneID="bsY-dl-ptd">
             <objects>
-                <tableViewController id="8tc-7C-7L1" customClass="BaseTableViewController" customModule="vfeng" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="8tc-7C-7L1" customClass="DetailTableViewController" customModule="vfeng" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iEh-fc-4uZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -836,13 +843,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFC-pw-g7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="172" y="1879"/>
+            <point key="canvasLocation" x="172" y="1907"/>
         </scene>
     </scenes>
     <resources>
         <image name="cloths" width="200" height="200"/>
         <image name="family" width="200" height="200"/>
         <image name="foods" width="200" height="200"/>
+        <image name="logout" width="30" height="30"/>
         <image name="right" width="20" height="41"/>
         <image name="rushtime" width="200" height="200"/>
         <image name="sport" width="200" height="200"/>

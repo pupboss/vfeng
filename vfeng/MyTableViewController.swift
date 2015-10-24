@@ -10,6 +10,8 @@ import UIKit
 
 class MyTableViewController: BaseTableViewController {
 
+    @IBOutlet weak var escButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +23,30 @@ class MyTableViewController: BaseTableViewController {
         self.performSegueWithIdentifier("my2user", sender: nil)
     }
 
+    
+    @IBAction func logoutAction(sender: UIBarButtonItem) {
+        
+        let alertController = UIAlertController.init(title: nil, message: "V疯", preferredStyle: .ActionSheet)
+        let escAction = UIAlertAction.init(title: "退出登录", style: .Default) { (action: UIAlertAction) -> Void in
+            
+            self.performSegueWithIdentifier("my2login", sender: nil)
+        }
+        
+        
+        alertController.addAction(escAction)
+        
+        let cancelAction = UIAlertAction.init(title: "取消", style: .Cancel, handler: nil)
+        
+        alertController.addAction(cancelAction)
+        
+        alertController.modalPresentationStyle = .Popover
+        
+        alertController.popoverPresentationController?.barButtonItem = self.escButton;
+        alertController.popoverPresentationController?.sourceView = self.view;
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -31,11 +57,6 @@ class MyTableViewController: BaseTableViewController {
         } else {
             
         }
-    }
-
-    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 
     

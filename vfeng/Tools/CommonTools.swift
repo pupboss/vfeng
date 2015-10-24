@@ -30,7 +30,7 @@ struct Constants {
     
     struct UserInfo {
         
-        static let USER_NAME = CommonTools.getUserDefaultValueForKey(Constants.UserInfoKey.USER_NAME_KEY)
+        static var USER_NAME = CommonTools.getUserDefaultValueForKey(Constants.UserInfoKey.USER_NAME_KEY)
     }
     
     struct UserInfoFilePath {
